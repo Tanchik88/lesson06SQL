@@ -1,10 +1,11 @@
 package lesson006;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class UserDAODemo {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws SQLException {
     UserDAO userDAO = new UserDAO(MyDataSource.getDataSource());
     User user = userDAO.findById(1);
 //    System.out.println(user);

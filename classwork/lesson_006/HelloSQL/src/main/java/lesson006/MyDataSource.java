@@ -4,7 +4,7 @@ import javax.sql.DataSource;
 import org.postgresql.ds.PGSimpleDataSource;
 
 public class MyDataSource {
-  private static DataSource dataSource;
+  static DataSource dataSource;
 
   public static DataSource getDataSource(){
     if(dataSource== null){
